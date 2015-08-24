@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta charset="utf-8">
+     <title>Ritz Reservation</title>
+     <link rel="shortcut icon" type="image/x-icon" href="favicon.png">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+     <link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic" rel="stylesheet" type="text/css">
+     <link rel="stylesheet" type="text/css" href="../styles/lib/style.css">
+</head>
+
+<body>
+
+<header>
+        <img src="../images/f.jpg" class="icon">
+        <img src="../images/g.jpg" class="icon">
+        <img src="../images/t.jpg" class="icon">
+        <p class="number"> Make A Reservation : 352-870-6512 </p>
+</header>
+
+    <section class="company">
+        <span class="heading">RITZ Dining!</span>
+            <ul class="list">
+                <li><a href="#"> Home </a></li>
+                <li><a href="#"> Menu</a></li>
+                <li><a href="#"> <strong>Reservations</strong> </a></li>
+                <li><a href="#"> Contacts </a></li>
+            </ul>
+    </section>
+
+     <section class="guest">
+         <p class="welcome"> Welcome Guests ! Lets Get Started .. <span class="glyphicon glyphicon-time"></span></p>
+         <marquee class="animation">  TODAY SPECIAL 10% DISCOUNT!!</marquee>
+
+         <div class="container">
+             <div class="row">
+                 <div class="col-sm-5">
+                   <form class="form">
+                     <div class="form-group">
+                        <label for="date" >DATE </label> <input type="date" class="form-control" id="date"  required>
+                    </div>
+                   </form>
+                 </div>
+
+                <div class="col-sm-4">
+                   <form class="form">
+                       <div class="form-group">
+                        <label for="time">TIME </label> <input type="time" class="form-control" id="time" required>
+                       </div>
+                   </form>
+                </div>
+             </div>
+
+            <div class="row">
+               <div class="col-sm-9">
+                  <form class="form">
+                     <div class="form-group">
+                       <label for="name" >NAME </label> <input type="name" class="form-control" id="name" placeholder="enter name" required>
+                     </div>
+                  </form>
+                </div>
+            </div>
+
+             <div class="row">
+              <div class="col-sm-9">
+                <form class="form">
+                    <div class="form-group">
+                        <label for="phone" >PHONE</label> <input type="number" class="form-control" id="phone" placeholder="enter phone" required>
+                    </div>
+                </form>
+             </div>
+            </div>
+
+            <div class="row">
+             <div class="col-sm-9">
+                <form class="form">
+                    <div class="form-group">
+                        <label for="email" >EMAIL</label> <input type="email" class="form-control" id="email" placeholder="abc@domain.com" required>
+                    </div>
+                </form>
+            </div>
+            </div>
+
+            <div class="row">
+            <div class="col-sm-4">
+                <form class="form">
+                    <div class="form-group">
+                        <label for="party" >PARTY SIZE</label> <input type="number" class="form-control" id="party" min="2" max="10">
+                        </div>
+                </form>
+            </div>
+
+            <div class="col-sm-5">
+                <form class="form">
+                    <div class="form-group">
+                        <label for="time1">OCCASION </label> <input type="text" class="form-control" id="time1" placeholder="Anniversary,bdays..">
+                    </div>
+                </form>
+             </div>
+            </div>
+                 <button class="bg bg-danger btn-sm" > RESERVE</button>
+                 <br>
+                 <a href="edit.html" class="confirm" title="Click to go to user's options."> <em>Already have your confirmation number??</em> </a>
+         </div>
+    </section>
+<section class="owner">
+
+     <label class="abc" for="email1" >OWNER-LOGIN &nbsp;</label>
+     <input class="login" type="email"  id="email1"/>
+
+     <label class="abc" for="password1" >PASSWORD &nbsp; &nbsp; &nbsp; &nbsp;</label>
+     <input type="password"  id="password1"/>
+     <button class="ow1 text-danger"> <a href="owner.html">LOGIN</a></button>
+ </section>
+
+<section class="add">
+
+<div> WELCOME ALL TO <strong> RITZ DINING! </strong> </div>
+    <div> TODAY SPECIAL OFFER !!!!!
+        10% DISCOUNT on TOTAL ORDER  :)
+    :)</div>
+    <input type="submit" id="ritz" value=" CONTINUE ">
+</section>
+
+<footer>
+    <p class="foot"> @2015 Proudly Designed and Developed by Ritanshi Parmar</p>
+
+
+
+<!-- JavaScripts libraries-->
+<script type="text/javascript" src="../styles/lib/jquery.min.js"></script>
+<script type="text/javascript" src="../styles/lib/bootstrap.min.js"></script>
+    <script>
+
+        $(document).ready(function() {
+            $("#ritz").click(function () {
+                $(".add").hide();
+            });
+        });
+
+    </script>
+    </footer>
+
+</body>
+
+</html>
+
+
+
+
+

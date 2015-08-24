@@ -1,0 +1,562 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Ritz Reservation</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.0/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../styles/lib/style2.css">
+</head>
+
+<body>
+
+
+    <header>
+        <img src="../images/f.jpg" class="icon ficon">
+        <img src="../images/g.jpg" class="icon">
+        <img src="../images/t.jpg" class="icon">
+        <p class="number"> Make A Reservation : 352-870-6512 </p>
+    </header>
+
+    <div class="company">
+     <span class="heading"> <strong>RITZ Dining!</strong></span>
+        <ul class="list">
+            <li class="xyz"><a href="#">  Home</a></li>
+            <li class="xyz"><a href="#"> Menu</a></li>
+            <li class="xyz"><a href="res.html"> <strong>Reservations</strong> </a></li>
+           <li class="xyz"><a href="#"> Contacts </a></li>
+        </ul>
+    </div>
+
+
+
+
+
+<section class="guest">
+
+    <p class="welcome"> Welcome Owner!</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-11">
+                <div class="panel-group" id="acdion">
+                    <div class="panel panel-danger">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#acdion" href="#status"><span class="glyphicon glyphicon-list-alt"> Reservations</span> </a>
+                            </h3>
+                        </div>
+                        <div id="status" class="panel-collapse collapse in">
+                            <p>
+                            <div class="container" id="home">
+                                <div class="row">
+                                    <div class="col-sm-10">
+                                        <ul class="nav nav-tabs nav-justified nav-danger">
+                                            <li class="active"><a href="#tab-exreserve" class="text-danger bg-danger" data-toggle="tab"><span class="glyphicon glyphicon-time"> Existing Reservations</span></a>
+                                            </li>
+                                            <li><a    class="bg-danger text-danger" href="#tab-crreserve" data-toggle="tab"><span class="glyphicon glyphicon-cutlery"> Create Reservation</span></a>
+                                            </li>
+                                            <li><a class="text-danger bg-danger" href="#tab-edreserve" data-toggle="tab"><span class="glyphicon glyphicon-pencil"> Edit Reservation </span> </a>
+                                            </li>
+
+                                        </ul>
+                                        <div id="content" class="tab-content tab-danger">
+                                            <div class="tab-pane tab-danger active" id="tab-exreserve">
+                                                <h6>Reservation List</h6>
+                                                 <table class="table table-condensed table-bordered bg-muted">
+                                                    <thead class="bg-danger">
+                                                    <tr>  <th>Confirmation Number</th> <th>Name</th> <th>Date & Time</th> <th>Size</th> <th>Action</th> </tr>
+                                                    <!--   <button class="btn btn-primary" title="Open Details">
+                                                           <span class="glyphicon glyphicon-share"></span>
+                                                           <span class="btn-text">Details</span>
+                                                       </button> -->
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr>   <td> 11223#</td> <td> Ritanshi Parmar</td> <td> 08/20/15 , 6.15PM</td> <td> 3</td> <td>   <button class="btn btn-danger btn-sm" > <span class="glyphicon glyphicon-share"></span>  <span class="btn-text">Details</span> </button> </td> </tr>
+                                                    <tr>   <td> 11223#</td> <td> Ritanshi Parmar</td> <td> 08/20/15 , 7.15PM</td> <td> 3</td> <td>   <button class="btn btn-danger btn-sm" > <span class="glyphicon glyphicon-share"></span>  <span class="btn-text">Details</span> </button> </td> </tr>
+                                                    <tr>   <td> 11223#</td> <td> Ritanshi Parmar</td> <td> 08/20/15 , 6.15PM</td> <td> 3</td> <td>   <button class="btn btn-danger btn-sm" > <span class="glyphicon glyphicon-share"></span>  <span class="btn-text">Details</span> </button> </td> </tr>
+                                                    <tr>   <td> 11223#</td> <td> Ritanshi Parmar</td> <td> 08/20/15 , 7.15PM</td> <td> 3</td> <td>   <button class="btn btn-danger btn-sm" > <span class="glyphicon glyphicon-share"></span>  <span class="btn-text">Details</span> </button> </td> </tr>
+                                                    <tr>   <td> 11223#</td> <td> Ritanshi Parmar</td> <td> 08/20/15 , 6.15PM</td> <td> 3</td> <td>   <button class="btn btn-danger btn-sm" > <span class="glyphicon glyphicon-share"></span>  <span class="btn-text">Details</span> </button> </td> </tr>
+                                                    <tr>   <td> 11223#</td> <td> Ritanshi Parmar</td> <td> 08/20/15 , 7.15PM</td> <td> 3</td> <td>   <button class="btn btn-danger btn-sm" > <span class="glyphicon glyphicon-share"></span>  <span class="btn-text">Details</span> </button> </td> </tr>
+                                                    </tbody>
+                                                 </table>
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control" placeholder="Search" name="q">
+                                                            <div class="input-group-btn">
+                                                                <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+                                                    <div class="col-sm-12">
+                                                        <nav>
+                                                            <ul class="pager">
+                                                                <li class="previous disabled"><a href="#"><span aria-hidden="true">&larr;</span> Older</a></li>
+                                                                <li class="next"><a href="#" class="text-danger">Newer <span aria-hidden="true">&rarr;</span></a></li>
+                                                            </ul>
+                                                        </nav>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="tab-pane tab-danger" id="tab-crreserve">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-sm-5">
+                                                            <form class="form">
+                                                                <div class="form-group">
+                                                                    <label for="date" >DATE </label> <input type="date" class="form-control" id="date" placeholder="MM/dd/YYYY">
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                        <div class="col-sm-4">
+                                                            <form class="form">
+                                                                <div class="form-group">
+                                                                    <label for="time">TIME </label> <input type="time" class="form-control" id="time" placeholder="">
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-sm-9">
+                                                            <form class="form">
+                                                                <div class="form-group">
+                                                                    <label for="name" >NAME </label> <input type="name" class="form-control" id="name" placeholder="Enter yor name" required>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row">
+                                                        <div class="col-sm-9">
+                                                            <form class="form">
+                                                                <div class="form-group">
+                                                                    <label for="phone" >PHONE</label> <input type="number" class="form-control" id="phone" placeholder="Enter your Contact Number">
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-sm-9">
+                                                            <form class="form">
+                                                                <div class="form-group">
+                                                                    <label for="email" >EMAIL</label> <input type="email" class="form-control" id="email" placeholder="abc@domain.com">
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row">
+                                                        <div class="col-sm-4">
+                                                            <form class="form">
+                                                                <div class="form-group">
+                                                                    <label for="party" >PARTY SIZE</label> <input type="number" class="form-control" id="party" min="2" max="10">
+                                                                </div>
+                                                            </form>
+
+                                                        </div>
+
+                                                        <div class="col-sm-5">
+                                                            <form class="form">
+                                                                <div class="form-group">
+                                                                    <label for="time">OCCASSION </label> <input type="text" class="form-control" id="time" placeholder="Anniversary,Birthday,etc">
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                    <button class="bg bg-danger btn-sm" > SUBMIT</button>
+                                                </div>
+
+                                            </div>
+                                            <div class="tab-pane tab-danger" id="tab-edreserve">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-sm-8">
+                                                            <form class="form">
+                                                                <div class="form-group">
+                                                                    <br>
+                                                                    <label for="no" >CONFIRMATION NUMBER </label> <input type="number" class="form-control" placeholder="Enter your Confirmation Number" required id="no">
+                                                                </div>
+                                                            </form>
+                                                        </div>
+
+
+
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-sm-7">
+                                                            <button class="bg bg-danger btn-sm" > SUBMIT</button>
+                                                        </div>
+                                                    </div>
+                                                    <br>
+
+                                                    <div class="row">
+                                                        <div class="col-sm-4">
+                                                            <form class="form">
+                                                                <div class="form-group">
+                                                                    <label for="name" >NAME </label> <input type="name" class="form-control" id="name">
+                                                                </div>
+                                                            </form>
+                                                        </div>
+
+
+                                                        <div class="col-sm-4">
+                                                            <form class="form">
+                                                                <div class="form-group">
+                                                                    <label for="stat" >STATUS </label> <input type="text" class="form-control" id="stat">
+                                                                </div>
+                                                            </form>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="panel panel-danger">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#acdion" href="#seating"><span class="glyphicon glyphicon-user"> Seating Map</span></a>
+                            </h3>
+                        </div>
+                        <div id="seating" class="panel-collapse collapse">
+                            <p>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-5">
+                                        <h5 class="text-danger"><marquee><strong> &nbsp;Click the Cnf No. to get Reservation Details.</strong> </marquee></h5>
+                                        <table class="table table-condensed table-bordered bg-muted">
+                                            <thead class="bg-danger">
+                                            <tr>  <th>Table</th> <th>Status</th> <th>Since</th> <th>Size</th> <th>Cnf.No</th> </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>   <td> 5</td> <td class="text-danger"> Occupied</td> <td> 6.15PM</td> <td> 3</td> <td> <a href="#" id="a"> #12345</a> </td> </tr>
+                                            <tr>   <td> 1</td> <td class="text-success bg-success"> Available</td> <td> - </td> <td> -</td> <td> <a href="#"> - </a></td> </tr>
+                                            <tr>   <td> 6</td> <td class="text-danger"> Occupied</td> <td> 6.30PM</td> <td> 4</td> <td> <a href="#" id="c">#67897 </a></td> </tr>
+                                            <tr>   <td> 3</td> <td class="text-danger "> Occupied</td> <td> 7.15PM</td> <td> 2</td> <td>  <a href="#" id="e">#75674 </a></td> </tr>
+                                            <tr>   <td> 2</td> <td class="text-success bg-success"> Available</td> <td>  - </td> <td> -</td> <td> <a href="#"> - </a></td> </tr>
+                                            <tr>   <td> 4</td> <td class="text-success bg-success"> Available</td> <td> - </td> <td> -</td> <td> <a href="#">-</a></td> </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <div class="col-sm-5">
+                                        <table class="table table-condensed table-bordered bg-muted" id="b" style="display:none;">
+                                            <thead class="bg-danger">
+                                            <tr>  <th>Cnf. No.</th> <th>Name</th> <th>Date&Time</th> <th>Size</th>  </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>   <td> #12345</td> <td> Ritanshi Parmar</td> <td> 12/20,6.15PM</td> <td> 3</td>  </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <div class="col-sm-5">
+                                        <table class="table table-condensed table-bordered bg-muted" id="d" style="display:none;">
+                                            <thead class="bg-danger">
+                                            <tr>  <th>Cnf. No.</th> <th>Name</th> <th>Date&Time</th> <th>Size</th>  </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>   <td> #67897</td> <td> Ritanshi Parmar</td> <td> 12/20,6.30PM</td> <td> 4</td>  </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+
+                                    <div class="col-sm-5">
+                                        <table class="table table-condensed table-bordered bg-muted" id="f" style="display:none;">
+                                            <thead class="bg-danger">
+                                            <tr>  <th>Cnf. No.</th> <th>Name</th> <th>Date&Time</th> <th>Size</th>  </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>   <td> #75674</td> <td> Ritanshi Parmar</td> <td> 12/20,7.15PM</td> <td> 2</td>  </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                        </div>
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="panel panel-danger">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#acdion" href="#profile"> <span class="glyphicon glyphicon-glass"> Restaurant Profile</span></a>
+                            </h3>
+                        </div>
+                        <div id="profile" class="panel-collapse collapse ">
+                            <p>
+                            <div class="container">
+                            <div class="row">
+                                    <div class="col-sm-5">
+                                        <form class="form">
+                                            <div class="form-group">
+                                                <label for="name1" >NAME </label> <input  style="color:red;" type="name" class="form-control" id="name1" value="Ritz Dining">
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                    <div class="col-sm-4">
+                                        <form class="form">
+                                            <div class="form-group">
+                                                <label for="timings">TIMINGS </label> <input style="color:red;" type="text" class="form-control" id="timings" value="11 AM to midnight">
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-9">
+                                        <form class="form">
+                                            <div class="form-group">
+                                                <label for="address" >ADDRESS </label> <input style="color:red;" type="text" class="form-control" id="address" value="3230 SW ARCHER ROAD, REGENCY OAK, GAINESVILLE-FL,32608">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-9">
+                                        <form class="form">
+                                            <div class="form-group">
+                                                <label for="phone2" >PHONE</label> <input style="color:red;" type="phone" class="form-control" id="phone2" value="352-870-6512">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-9">
+                                        <form class="form">
+                                            <div class="form-group">
+                                                <label for="email" >EMAIL</label> <input type="email" style="color:red;" class="form-control" id="email" value="contactus@ritzdining.com">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-9">
+                                        <form class="form">
+                                            <div class="form-group">
+                                                <label for="closing" >CLOSING DAYS</label> <input type="text" style="color:red;" class="form-control" id="closing" value="Tuesdays!">
+                                            </div>
+                                        </form>
+                                    </div>
+
+
+                                </div>
+                                <button class="bg bg-danger btn-sm" > SAVE CHANGES</button>
+                        </div>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="panel panel-danger">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#acdion" href="#settings"> <span class="glyphicon glyphicon-cog"> Settings<span></a>
+                            </h3>
+                        </div>
+                        <div id="settings" class="panel-collapse collapse ">
+                            <p>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-5">
+                                        <h4> AUTO ASSIGN </h4>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" data-toggle="toggle">
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="container">
+
+                                <h4> MANUAL ASSIGN TABLE</h4> <h4></h4>
+                                <h6 class="text-danger">  RESERVATION TABLE <marquee> Click the ASSIGN TABLE link to open the SEATING TABLE!</marquee></h6>
+                                <div class="row">
+                                    <div class="col-sm-5">
+                                        <table class="table table-condensed table-bordered bg-muted">
+                                            <thead class="bg-danger">
+                                            <tr>  <th>Confirmation Number</th> <th>Name</th> <th>Date & Time</th> <th>Size</th> <th>Action</th> </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>   <td> 11223#</td> <td> Ritanshi Parmar</td> <td> 08/20/15 , 6.15PM</td> <td> 3</td> <td> <a  class="text-danger" href="#" id="tab1"> ASSIGN TABLE </a> </td> </tr>
+                                            <tr>   <td> 44223#</td> <td> Ritanshi Parmar</td> <td> 08/20/15 , 7.15PM</td> <td> 3</td> <td>   <a  class="text-danger" href="#" id="tab1"> ASSIGN TABLE</a> </td>  </tr>
+                                            <tr>   <td> 11223#</td> <td> Ritanshi Parmar</td> <td> 08/20/15 , 6.15PM</td> <td> 3</td> <td>   <a  class="text-danger" href="#" id="tab1"> ASSIGN TABLE </a> </td> </tr>
+                                            <tr>   <td> 47223#</td> <td> Ritanshi Parmar</td> <td> 08/20/15 , 7.15PM</td> <td> 3</td> <td>   <a  class="text-danger" href="#" id="tab1"> ASSIGN TABLE </a> </td> </tr>
+                                            <tr>   <td> 11223#</td> <td> Ritanshi Parmar</td> <td> 08/20/15 , 6.15PM</td> <td> 3</td> <td>   <a  class="text-danger" href="#" id="tab1"> ASSIGN TABLE </a> </td> </tr>
+                                            <tr>   <td> 11223#</td> <td> Ritanshi Parmar</td> <td> 08/20/15 , 7.15PM</td> <td> 3</td> <td>   <a  class="text-danger" href="#" id="tab1"> ASSIGN TABLE </a> </td> </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <div class="col-sm-5">
+                                        <h6 id="assign1" style="display:none;"> SEATING TABLE</h6>
+                                        <table class="table table-condensed table-bordered bg-muted" id="assign" style="display:none;">
+                                            <thead class="bg-danger">
+                                            <tr>  <th>Table</th> <th>Status</th> <th>Since</th> <th>Size</th> <th>Cnf.No</th> <th> Assign Table</th></tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>   <td> 5</td> <td class="text-danger"> Occupied</td> <td> 6.15PM</td> <td> 3</td> <td> <a href="#" > #12345</a> </td> <td></td></tr>
+                                            <tr>   <td> 1</td> <td class="text-success bg-success"> Available</td> <td> - </td> <td> -</td> <td> <a href="#"> - </a></td> <td class="text-success bg-success"> Assign #11223</td></tr>
+                                            <tr>   <td> 6</td> <td class="text-danger"> Occupied</td> <td> 6.30PM</td> <td> 4</td> <td> <a href="#" >#67897 </a></td> <td></td></tr>
+                                            <tr>   <td> 3</td> <td class="text-danger"> Occupied</td> <td> 7.15PM</td> <td> 2</td> <td>  <a href="#">#75674 </a></td> <td></td></tr>
+                                            <tr>   <td> 2</td> <td class="text-success bg-success"> Available</td> <td>  - </td> <td> -</td> <td> <a href="#"> - </a></td>  <td class="text-success bg-success "> Assign #44223</td> </tr>
+                                            <tr>   <td> 4</td> <td class="text-success bg-success"> Available</td> <td> - </td> <td> -</td> <td> <a href="#">-</a></td>  <td class="text-success bg-success"> Assign #47223</td> </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-5">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="Search" name="q">
+                                            <div class="input-group-btn">
+                                                <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-sm-10">
+                                        <nav>
+                                            <ul class="pager ">
+                                                <li class="previous disabled"><a href="#"><span aria-hidden="true">&larr;</span> Older</a></li>
+                                                <li class="next"><a href="#" class="text-danger">Newer <span aria-hidden="true">&rarr;</span></a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-danger">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#acdion" href="#contacts"> <span class="glyphicon glyphicon-earphone"> Customer Contacts</span></a>
+                            </h3>
+                        </div>
+                        <div id="contacts" class="panel-collapse collapse ">
+                            <p>
+                            <h4> &nbsp;Conatact List</h4>
+                            <div class="row">
+                                <div class="col-sm-12">
+
+
+                                    <table class="table  table-bordered bg-muted">
+                                        <thead class="bg-danger">
+                                        <tr>  <th>S.no</th> <th>Name</th> <th>Address</th> <th>Phone No</th> <th>Reservation History</th> </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>   <td> 1.</td> <td> Ritanshi Parmar</td> <td> 3230-#ABC,FL</td> <td>352-870-6512</td> <td>   <button class="btn btn-danger btn-sm" > <span class="glyphicon glyphicon-share"></span>  <span class="btn-text">Reservation History</span> </button> </td> </tr>
+                                        <tr>   <td> 2.</td> <td> Ritanshi Parmar</td> <td> </td> <td> </td> <td>   <button class="btn btn-danger btn-sm" > <span class="glyphicon glyphicon-share"></span>  <span class="btn-text">Reservation History</span> </button> </td> </tr>
+                                        <tr>   <td> 3.</td> <td> Ritanshi Parmar</td> <td> </td> <td> </td> <td>   <button class="btn btn-danger btn-sm" > <span class="glyphicon glyphicon-share"></span>  <span class="btn-text">Reservation History</span> </button> </td> </tr>
+                                        <tr>   <td> 4.</td> <td> Ritanshi Parmar</td> <td> </td> <td> </td> <td>   <button class="btn btn-danger btn-sm" > <span class="glyphicon glyphicon-share"></span>  <span class="btn-text">Reservation History</span> </button> </td> </tr>
+                                        <tr>   <td> 5.</td> <td> Ritanshi Parmar</td> <td> </td> <td> </td> <td>   <button class="btn btn-danger btn-sm" > <span class="glyphicon glyphicon-share"></span>  <span class="btn-text">Reservation History</span> </button> </td> </tr>
+                                        <tr>   <td> 6.</td> <td> Ritanshi Parmar</td> <td> </td> <td> </td> <td>   <button class="btn btn-danger btn-sm" > <span class="glyphicon glyphicon-share"></span>  <span class="btn-text">Reservation History</span> </button> </td> </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-10">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="Search" name="q">
+                                            <div class="input-group-btn">
+                                                <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-10">
+                                        <nav>
+                                            <ul class="pager ">
+                                                <li class="previous disabled"><a href="#"><span aria-hidden="true">&larr;</span> Older</a></li>
+                                                <li class="next"><a href="#" class="text-danger">Newer <span aria-hidden="true">&rarr;</span></a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+<footer>
+    <p class="foot"> @2015 Proudly Designed and Developed by Ritanshi Parmar</p> </footer>
+
+    <!-- JavaScripts libraries-->
+<script type="text/javascript" src="../styles/lib/jquery.min.js"></script>
+
+<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.0/js/bootstrap-toggle.min.js"></script>
+<script type="text/javascript" src="../styles/lib/bootstrap.min.js"></script>
+<script>
+
+    $(document).ready(function() {
+        $("#a").click(function () {
+            $("#b").toggle();
+            $("#d").hide();
+            $("#f").hide();
+
+
+        });
+
+        $("#c").click(function () {
+            $("#d").toggle();
+            $("#b").hide();
+            $("#f").hide();
+        });
+
+        $("#e").click(function () {
+            $("#f").toggle();
+            $("#d").hide();
+            $("#b").hide();
+
+
+        });
+        $("#tab1").click(function () {
+            $("#assign").show();
+            $("#assign1").show();
+
+
+        });
+    });
+
+
+</script>
+
+</body>
+
+</html>
+
+
+
+
+

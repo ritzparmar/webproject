@@ -1,0 +1,175 @@
+
+*{padding:0px;
+margin:0px;}
+
+
+body{
+
+    background-image: url('../../images/spezie.jpg');
+    width:100%;
+    height:100%;
+}
+
+header{
+    height:5%;
+    width:73%;
+    margin:0% auto;
+    background-color:darkred;
+}
+.number{
+
+    width:73%;
+    margin-left:63%;
+    color:navajowhite;
+    display:inline;
+    text-align:right;
+    font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style:oblique;
+}
+
+.icon{
+    height:2%;
+    width:3%;
+    padding:1px;
+}
+
+.icon:hover{
+    border-radius:18px;
+}
+
+.company{
+    margin:0% auto;
+    width:73%;
+    height:7%;
+    background-color:navajowhite;
+    opacity:0.9;
+
+}
+
+
+.heading{
+    margin:1% auto;
+    width:73%;
+    font-family:cursive;
+    font-size:400%;
+    display:block;
+    margin-bottom:20px;
+    color:darkred;
+    padding:3px;
+    margin-left:57px;
+}
+
+label{
+    color:darkred;
+    font-size:15px ;
+}
+ul{list-style:none;
+    margin:0% auto;
+    border-color:darkred;
+    width:119%;
+    height:9%;}
+
+ul li{float:left;
+    border-top:5px solid darkred;
+    background:navajowhite;
+    width:21%;margin-bottom:2px;
+    height:6%;
+    border-bottom:5px solid darkred;
+    text-align:center;
+    font-family:cursive;
+    font-size:148%;
+    color:darkred;}
+
+ul li a{color:darkred;
+    text-decoration:none;
+    font-family:cursive;padding:3%;}
+
+ul li a:hover{font-weight: 900;}
+
+.guest{width:73%;height:100%; margin:10% auto;
+    background-color:rgba(255, 222, 173, 0.68);
+    border-top: 8px solid darkred;
+    border-bottom: 8px solid darkred;
+}
+
+.welcome{
+    font-family:cursive;
+    text-shadow: #4cae4c;
+    font-size:300%;
+    font-weight:400;
+    text-align:center;
+    color:darkred;
+;
+    display:block;
+    margin:5%;
+}
+
+.confirm{
+    margin-left:25%;
+    font-size:150%;
+    font-weight:bolder;
+    color:darkred;
+}
+
+button{
+    margin-left:35%;
+    color:brown;
+}
+
+.owner{
+    width:73%;
+    height:30%;
+    background-color:darkred;
+    margin:0% auto;
+}
+
+.ow1{
+    margin-left:90%;
+}
+
+.abc{
+    color:navajowhite;
+    margin-left:64%;
+    padding:1%;
+    font-style: normal;
+}
+
+footer{
+    width:73%;
+    height:10%;
+    background-color:rgb(84,12,12);
+    color:navajowhite;
+    margin:0% auto;
+    text-align:center;
+}
+
+.foot{
+    padding:.2%;
+}
+
+.animation{
+    margin-top:3%;
+    width:98%;
+    direction:right;
+    font-size:150%;
+    color:red;
+    font-weight:900;
+    display:block;
+}
+
+.add{
+    left:18%;
+    top:20%;
+    position:fixed;
+font-family:monospace;
+    color:darkred;
+    font-size:300%;
+    padding:5%;
+text-align:center;
+    width:65%;
+    height:65%;
+    background-color:rgba(255, 179, 0, 0.7);
+border: 4px solid orangered;
+
+
+}

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Ritz Reservation</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../styles/lib/style1.css">
+</head>
+
+<body>
+   <header>
+       <img src="../images/f.jpg" class="icon ficon">
+       <img src="../images/g.jpg" class="icon">
+       <img src="../images/t.jpg" class="icon">
+       <p class="number"> Make A Reservation : 352-870-6512 </p>
+   </header>
+
+
+
+   <div class="company">
+    <span class="heading"> RITZ Dining!</span>
+       <ul class="list">
+           <li><a href="#"> Home </a></li>
+           <li><a href="#"> Menu</a></li>
+           <li><a href="res.html"> <strong>Reservations</strong> </a></li>
+           <li><a href="#"> Contacts </a></li>
+       </ul>
+    </div>
+
+
+   <section class="guest">
+       <p class="welcome"> Reservation Updates!</p>
+         <div class="container">
+           <div class="row">
+               <div class="col-sm-1"></div>
+             <div class="col-sm-8">
+                <div class="panel-group" id="acdion">
+                    <div class="panel panel-danger">
+                      <div class="panel-heading">
+                          <h3 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#acdion" href="#status"><span class="glyphicon glyphicon-time txt"> Reservation Status </span></a>
+                          </h3>
+                      </div>
+                        <div id="status" class="panel-collapse collapse in">
+                            <p>
+                            <div class="container">
+                                 <div class="row">
+                                    <div class="col-sm-7">
+                                        <form class="form">
+                                            <div class="form-group">
+                                                <label for="no" >CONFIRMATION NUMBER </label> <input type="number" class="form-control" placeholder="Enter your Confirmation Number" required id="no">
+                                            </div>
+                                        </form>
+                                    </div>
+                                 </div>
+
+                                 <div class="row">
+                                     <div class="col-sm-9">
+                                         <button class="bg bg-danger btn-sm" > SUBMIT</button>
+                                     </div>
+                                 </div>
+                                   <br>
+
+                                 <div class="row">
+                                    <div class="col-sm-4">
+                                        <form class="form">
+                                            <div class="form-group">
+                                                <label for="name" >NAME </label> <input type="name" class="form-control" id="name">
+                                            </div>
+                                        </form>
+                                    </div>
+
+
+                                     <div class="col-sm-3">
+                                        <form class="form">
+                                            <div class="form-group">
+                                                <label for="stat" >STATUS </label> <input type="text" class="form-control" id="stat">
+                                            </div>
+                                        </form>
+                                     </div>
+                                 </div>
+                            </div>
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="panel panel-danger">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#acdion" href="#edit"><span class="glyphicon glyphicon-pencil txt" > Edit Reservation </span></a>
+                            </h3>
+                        </div>
+
+                        <div id="edit" class="panel-collapse collapse">
+                            <p>
+                              <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <form class="form">
+                                            <div class="form-group">
+                                                <label for="date" >DATE </label> <input type="date" class="form-control" id="date" placeholder="Enter the date" required>
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                    <div class="col-sm-3">
+                                        <form class="form">
+                                            <div class="form-group">
+                                                <label for="time">TIME </label> <input type="time" class="form-control" id="time" placeholder="Enter the time" required>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    </div>
+
+                                <div class="row">
+                                    <div class="col-sm-7">
+                                        <form class="form">
+                                            <div class="form-group">
+                                                <label for="name" >NAME </label> <input type="name" class="form-control" id="name" placeholder="Enter your name" required>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-7">
+                                        <form class="form">
+                                            <div class="form-group">
+                                                <label for="phone" >PHONE</label> <input type="number" class="form-control" id="phone" placeholder="enter your phone number" required>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-7">
+                                        <form class="form">
+                                            <div class="form-group">
+                                                <label for="email" >EMAIL</label> <input type="email" class="form-control" id="email" placeholder="abc@domain.com " required>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <form class="form">
+                                            <div class="form-group">
+                                                <label for="party" >PARTY SIZE</label> <input type="number" class="form-control" id="party" min="2" max="10">
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                    <div class="col-sm-4">
+                                        <form class="form">
+                                            <div class="form-group">
+                                                <label for="time">OCCASION </label> <input type="text" class="form-control" id="time" placeholder="Anniversary,Birthday,etc" required>
+                                            </div>
+                                        </form>
+                                    </div>
+
+
+                                    <div class="row">
+                                        <div class="col-sm-9">
+                                            <button class="bg bg-danger btn-sm" > SAVE CHANGES</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="panel panel-danger">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#acdion" href="#cancel"> <span class="glyphicon glyphicon-remove-circle txt"> Cancel Reservation </span></a>
+                            </h3>
+                        </div>
+                        <div id="cancel" class="panel-collapse collapse ">
+                            <p>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <form class="form">
+                                            <div class="form-group">
+                                                <p class="bg-warning"> We are very sorry for any inconvenience !</p>
+                                                <label for="no" >CONFIRMATION NUMBER </label> <input type="number" class="form-control" placeholder="Enter your Confirmation Number" required id="no">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-9">
+                                        <button class="bg bg-danger btn-sm" > CANCEL</button>
+                                    </div>
+                                </div><br>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+             </div>
+           </div>
+        </div>
+
+
+
+</section>
+<footer>
+    <p class="foot"> @2015 Proudly Designed and Developed by Ritanshi Parmar</p> </footer>
+
+
+    <!-- JavaScripts libraries-->
+    <script type="text/javascript" src="../styles/lib/jquery.min.js"></script>
+    <script type="text/javascript" src="../styles/lib/bootstrap.min.js"></script>
+
+</body>
+
+</html>
+
+
+
+
+
